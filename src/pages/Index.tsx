@@ -53,24 +53,34 @@ const Index = () => {
 
   const advantages = [
     {
+      icon: "UserCheck",
+      title: "Честный мастер",
+      description: "Работаем прозрачно и честно с каждым клиентом",
+    },
+    {
+      icon: "Users",
+      title: "Скидки пенсионерам",
+      description: "Специальные цены для пенсионеров и инвалидов",
+    },
+    {
       icon: "Zap",
-      title: "Быстро",
-      description: "Большинство работ выполняется в день обращения",
-    },
-    {
-      icon: "Award",
-      title: "Опыт",
-      description: "Более 10 лет работы в сфере ремонта техники",
-    },
-    {
-      icon: "ThumbsUp",
-      title: "Гарантия",
-      description: "Предоставляем гарантию на все виды работ",
+      title: "Качественно-Быстро",
+      description: "Выполняем работу быстро и на высоком уровне",
     },
     {
       icon: "DollarSign",
-      title: "Честные цены",
-      description: "Прозрачное ценообразование без скрытых платежей",
+      title: "Недорого",
+      description: "Доступные цены на все виды услуг",
+    },
+    {
+      icon: "Home",
+      title: "Выезд на дом",
+      description: "Приедем к вам домой или в офис",
+    },
+    {
+      icon: "Clock",
+      title: "Без выходных",
+      description: "Работаем с 10 до 22 часов каждый день",
     },
   ];
 
@@ -81,14 +91,24 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-white animate-fade-in">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Ремонт компьютеров
-                <span className="block text-4xl md:text-5xl mt-2">быстро и надёжно</span>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                Ussuri-Technicol
+                <span className="block text-3xl md:text-4xl mt-2">Ремонт компьютерной техники</span>
               </h1>
-              <p className="text-xl mb-8 text-white/90">
-                Профессиональный мастер с опытом более 10 лет. 
-                Диагностика бесплатно!
-              </p>
+              <div className="space-y-3 mb-8">
+                <p className="text-2xl font-bold text-white">
+                  ЧЕСТНЫЙ МАСТЕР
+                </p>
+                <p className="text-lg text-white/90">
+                  Пенсионерам и инвалидам скидки
+                </p>
+                <p className="text-lg text-white/90">
+                  Качественно-Быстро и Недорого!
+                </p>
+                <p className="text-lg text-white/90">
+                  Выезд по адресу, а также в населенные пункты
+                </p>
+              </div>
               <div className="flex flex-wrap gap-4">
                 <Button 
                   size="lg" 
@@ -179,7 +199,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {advantages.map((advantage, index) => (
               <div 
                 key={index} 
@@ -207,8 +227,27 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
               Свяжитесь с нами
             </h2>
+            <div className="space-y-4 mb-8">
+              <div className="flex items-center justify-center gap-3 text-xl">
+                <Icon name="Phone" size={24} className="text-primary" />
+                <a href="tel:+79910681672" className="hover:text-primary transition-colors font-semibold">
+                  +7 (991) 068-16-72
+                </a>
+                <span className="text-muted-foreground">(WhatsApp)</span>
+              </div>
+              <div className="flex items-center justify-center gap-3 text-xl">
+                <Icon name="Phone" size={24} className="text-primary" />
+                <a href="tel:+79644491228" className="hover:text-primary transition-colors font-semibold">
+                  +7 (964) 449-12-28
+                </a>
+              </div>
+              <div className="flex items-center justify-center gap-3 text-lg text-muted-foreground">
+                <Icon name="Clock" size={20} />
+                <span>Работаем с 10 до 22 ч., без выходных</span>
+              </div>
+            </div>
             <p className="text-xl text-muted-foreground">
-              Оставьте заявку и мы свяжемся с вами в ближайшее время
+              Или оставьте заявку и мы свяжемся с вами
             </p>
           </div>
 
@@ -271,21 +310,34 @@ const Index = () => {
       </section>
 
       <footer className="bg-gradient-to-r from-secondary to-primary text-white py-12 px-4">
-        <div className="container mx-auto max-w-6xl text-center">
-          <div className="flex justify-center gap-6 mb-6">
-            <a href="tel:+79999999999" className="hover:scale-110 transition-transform">
-              <Icon name="Phone" size={28} />
-            </a>
-            <a href="mailto:info@example.com" className="hover:scale-110 transition-transform">
-              <Icon name="Mail" size={28} />
-            </a>
-            <a href="#" className="hover:scale-110 transition-transform">
-              <Icon name="MessageCircle" size={28} />
-            </a>
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Ussuri-Technicol</h3>
+              <p className="text-white/90">Ремонт компьютерной техники</p>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-3">Контакты</h4>
+              <div className="space-y-2 text-white/90">
+                <a href="tel:+79910681672" className="block hover:text-white transition-colors">
+                  +7 (991) 068-16-72 (WhatsApp)
+                </a>
+                <a href="tel:+79644491228" className="block hover:text-white transition-colors">
+                  +7 (964) 449-12-28
+                </a>
+              </div>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-3">Режим работы</h4>
+              <p className="text-white/90">С 10 до 22 часов</p>
+              <p className="text-white/90">Без выходных</p>
+            </div>
           </div>
-          <p className="text-lg text-white/90">
-            © 2024 Ремонт компьютеров. Все права защищены.
-          </p>
+          <div className="text-center pt-8 border-t border-white/20">
+            <p className="text-white/90">
+              © 2024 Ussuri-Technicol. Все права защищены.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
