@@ -110,7 +110,7 @@ const Index = () => {
             </div>
             <div className="animate-slide-in-left hidden md:block">
               <img 
-                src="https://cdn.poehali.dev/projects/a496bf0e-2ad5-473d-b37d-a4449dd5e125/files/77d9e9f7-eee4-4377-95a5-91fd622ea982.jpg"
+                src="https://cdn.poehali.dev/projects/a496bf0e-2ad5-473d-b37d-a4449dd5e125/files/7d4d78ae-3b39-474c-97ae-66a9538aea29.jpg"
                 alt="Ремонт компьютеров"
                 className="rounded-2xl shadow-2xl w-full object-cover"
               />
