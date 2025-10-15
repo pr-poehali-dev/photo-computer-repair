@@ -110,7 +110,7 @@ const Index = () => {
             </div>
             <div className="animate-slide-in-left hidden md:block">
               <img 
-                src="https://cdn.poehali.dev/projects/a496bf0e-2ad5-473d-b37d-a4449dd5e125/files/7d4d78ae-3b39-474c-97ae-66a9538aea29.jpg"
+                src="https://cdn.poehali.dev/projects/a496bf0e-2ad5-473d-b37d-a4449dd5e125/files/82332b7b-4baf-41ac-a46d-507e0d83537b.jpg"
                 alt="Ремонт компьютеров"
                 className="rounded-2xl shadow-2xl w-full object-cover"
               />
@@ -160,6 +160,23 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
               Почему выбирают нас
             </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="https://cdn.poehali.dev/projects/a496bf0e-2ad5-473d-b37d-a4449dd5e125/files/4075eb3b-1be7-4811-8f78-53182075869b.jpg"
+                alt="Ремонт компьютеров - процесс работы"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="https://cdn.poehali.dev/projects/a496bf0e-2ad5-473d-b37d-a4449dd5e125/files/6a1172f7-7400-4ce2-8c76-af5ee9ede79a.jpg"
+                alt="Диагностика компьютерной техники"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
